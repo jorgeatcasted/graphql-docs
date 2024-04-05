@@ -3,7 +3,7 @@ name: Generate API Docs
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
   build-docs:
     runs-on: ubuntu-latest
