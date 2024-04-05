@@ -21,7 +21,7 @@ jobs:
       run: npm install -g spectaql
     
     - name: Gen docs
-      run: npx spectaql spectaql.yml
+      run: npx spectaql src/spectaql.yml
 
     - name: Deploy docs
       uses: JamesIves/github-pages-deploy-action@v4
