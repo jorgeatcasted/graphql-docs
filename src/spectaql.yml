@@ -11,7 +11,7 @@ introspection:
 
 info:
   title: API Documentation
-  description: GraphQL API documentation for CASTED.
+  description: GraphQL API documentation for CASTED
 
 servers:
   - url: https://my.production.tld/graphql
