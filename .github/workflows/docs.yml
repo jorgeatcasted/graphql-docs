@@ -20,7 +20,7 @@ jobs:
     - name: Install spectaql
       run: npm install -g spectaql
     
-    - name: Gen docs
+    - name: Gen api docs
       run: npx spectaql src/spectaql.yml
 
     - name: Deploy api docs
