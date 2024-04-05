@@ -1,0 +1,19 @@
+spectaql:
+  # logoUrl: https://www.casted.us/hs-fs/hubfs/Casted%202020/Casted_Logo_PUR_BLUE.png?width=210&height=51&name=Casted_Logo_PUR_BLUE.png
+  # faciconUrl: https://www.casted.us/hubfs/favicon.ico
+  targetDir: docs
+
+introspection:
+  removeTrailingPeriodFromDescriptions: false
+  schemaFile: src/schema.graphql
+  queryNameStrategy: capitalizeFirst
+  fieldExpansionDepth: 3
+
+info:
+  title: API Documentation
+  description: GraphQL API documentation for CASTED.
+
+servers:
+  - url: https://my.production.tld/graphql
+    description: Production
+    production: true

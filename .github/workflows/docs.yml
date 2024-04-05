@@ -1,0 +1,32 @@
+name: Generate API Docs
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-docs:
+    runs-on: ubuntu-latest
+  
+  steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Node environment  
+      uses: actions/setup-node@v4
+      with:
+        node-version: '16.x'
+
+    - name: Install spectaql
+      run: npm install -g spectaql
+    
+    - name: Gen docs
+      run: npx spectaql spectaql.yml
+
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        branch: master
+        folder: docs
+
+
